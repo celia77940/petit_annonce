@@ -91,16 +91,16 @@ Une page message supression :
 
 ## Tache à réaliser 💪
 
--	[ ] Comprendre le projet
--	[ ] Réaliser un benchmark
--	[ ] Réaliser un diagramme de cas d'utilisation
--	[ ] Réaliser le readme
--	[ ] Réaliser la maquette du site
+-	[x] Comprendre le projet
+-	[x] Réaliser un benchmark
+-	[x] Réaliser un diagramme de cas d'utilisation
+-	[x] Réaliser le readme
+-	[x] Réaliser la maquette du site
 -	[ ] Comprendre les technologies que l'on a besoin pour le projet
--	[ ] Concevoir le MCD
+-	[x] Concevoir le MCD
 -	[ ] Concevoir le MLD
 -	[ ] Concevoir le modèle physique
-- [ ] Installer le composer Windows 
+-   [ ] Installer le composer Windows 
 -	[ ] Installer les dépendances PHP : AltoRouter, mPDF
 -	[ ] Définir l'arborescence des dossiers
 -	[ ] Mettre en place un gitignore
