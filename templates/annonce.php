@@ -1,5 +1,6 @@
 <?php
 require 'modal.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +24,10 @@ require 'modal.php';
                 <h3>20 euros</h3>
             </div>
             <div>
-                <h4> <?php $annonces->getTitre() ?> </h4>
-                <h5>Une fille pas comme les autres</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, asperiores ea praesentium repellat debitis quod excepturi dolore veritatis dicta optio expedita animi reiciendis porro voluptatum soluta delectus quibusdam maxime incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, asperiores ea praesentium repellat debitis quod excepturi dolore veritatis dicta optio expedita animi reiciendis porro voluptatum soluta delectus quibusdam maxime incidunt.</p>
-                <h5>05 80 96 02 56</h5>
+                <h4> <?php echo $annonce->getTitre() ?> </h4>
+                <h5></h5>
+                <p></p>
+                <h5></h5>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                   Launch demo modal
                 </button>

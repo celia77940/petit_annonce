@@ -1,57 +1,36 @@
 <?php
-
 namespace App\Models;
 
-class AnnoncesModel extends Models
-{
-    protected $idannonce;
-    protected $auteur;
+class AnnoncesModel extends Model
+{       
+    protected $id;
     protected $titre;
-    protected $prix;
     protected $description;
+    protected $create_at;
+    protected $actif;
 
     public function __construct()
     {
-        $this->table = 'annonce';       
+        $this->table = 'annonce';      
     }
 
 
     /**
-     * Get the value of idannonce
+     * Get the value of id
      */ 
-    public function getIdannonce()
+    public function getId()
     {
-        return $this->idannonce;
+        return $this->id;
     }
 
     /**
-     * Set the value of idannonce
+     * Set the value of id
      *
      * @return  self
      */ 
-    public function setIdannonce($idannonce)
+    public function setId($id)
     {
-        $this->idannonce = $idannonce;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of auteur
-     */ 
-    public function getAuteur()
-    {
-        return $this->auteur;
-    }
-
-    /**
-     * Set the value of auteur
-     *
-     * @return  self
-     */ 
-    public function setAuteur($auteur)
-    {
-        $this->auteur = $auteur;
+        $this->id = $id;
 
         return $this;
     }
@@ -77,26 +56,6 @@ class AnnoncesModel extends Models
     }
 
     /**
-     * Get the value of prix
-     */ 
-    public function getPrix()
-    {
-        return $this->prix;
-    }
-
-    /**
-     * Set the value of prix
-     *
-     * @return  self
-     */ 
-    public function setPrix($prix)
-    {
-        $this->prix = $prix;
-
-        return $this;
-    }
-
-    /**
      * Get the value of description
      */ 
     public function getDescription()
@@ -112,6 +71,46 @@ class AnnoncesModel extends Models
     public function setDescription($description)
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of create_at
+     */ 
+    public function getCreate_at()
+    {
+        return $this->create_at;
+    }
+
+    /**
+     * Set the value of create_at
+     *
+     * @return  self
+     */ 
+    public function setCreate_at($create_at)
+    {
+        $this->create_at = $create_at;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of actif
+     */ 
+    public function getActif()
+    {
+        return $this->actif;
+    }
+
+    /**
+     * Set the value of actif
+     *
+     * @return  self
+     */ 
+    public function setActif($actif)
+    {
+        $this->actif = $actif;
 
         return $this;
     }
