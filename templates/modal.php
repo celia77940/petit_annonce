@@ -13,12 +13,12 @@
       <div class="modal-body text-center">
         <div class="border">
             <div class="border1"> 
-                <h3>20 euros</h3>
+                <h3> <?= $annonce->prix ?> </h3>
             </div>
             <div>
-                <h4>Marc levy</h4>
-                <h5>Une fille pas comme les autres</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, asperiores ea praesentium repellat debitis quod excepturi dolore veritatis dicta optio expedita animi reiciendis porro voluptatum soluta delectus quibusdam maxime incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, asperiores ea praesentium repellat debitis quod excepturi dolore veritatis dicta optio expedita animi reiciendis porro voluptatum soluta delectus quibusdam maxime incidunt.</p>
+                <h4><?= $annonce->auteur ?></h4>
+                <h5><?= $annonce->titre ?></h5>
+                <p><?= $annonce->description ?></p>
                 <h5>05 80 96 02 56</h5>
             </div>
         </div>

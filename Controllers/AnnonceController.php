@@ -10,7 +10,17 @@ class AnnonceController{
         $annoncesModel = new AnnoncesModel;
         $annonces = $annoncesModel->findAll();
 
-        require_once '../templates/annonce.php';
+        require_once '../views/index.view.php';
     }
+
+    public static function lire($idannonce)
+    {
+        $annoncesModel = new AnnoncesModel;
+        $annonces = $annoncesModel->find($idannonce);
+
+        require_once '../templates/modal.php';
+    }
+
+    
 
 }

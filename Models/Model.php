@@ -6,31 +6,33 @@ use App\Core\Db;
 
 class Model extends Db
 {
+    // déclaration d'une propriété
     // Table de la bases de données
     protected $table;
 
     //Instance de Db
     private $db;
 
+    // déclaration d'une méthode
     public function findAll()
     {
         $query = $this->requete('SELECT * FROM ' . $this->table);
         return $query->fetchAll();
     }
 
-    public function Find(int $id)
+    public function find(int $id)
     {
         return $this->requete("SELECT * FROM {$this->table} WHERE id = $id")->fetch();
     }
 
-    public function create(Model $model){
+    public function create(){
 
         $champs = [];
         $inter = [];
         $valeurs = [];
         
         // On boucle pour éclater le tableau
-        foreach($model as $champ => $valeur){
+        foreach($this as $champ => $valeur){
             // INSERT INTO annonces (titre, description, actif) VALUES (?, ?, ?)
             if($valeur != null && $champ != 'db' && $champ != 'table'){
 
@@ -50,13 +52,13 @@ class Model extends Db
 
     }
 
-    public function update(int $id, Model $model){
+    public function update(){
 
         $champs = [];
         $valeurs = [];
         
         // On boucle pour éclater le tableau
-        foreach($model as $champ => $valeur){
+        foreach($this as $champ => $valeur){
             // UPDATE annonces SET titre = ?, description = ?, actif = ?) Where id = ?
             if($valeur !== null && $champ != 'db' && $champ != 'table'){
 
@@ -66,7 +68,7 @@ class Model extends Db
             
         }
 
-        $valeurs[] = $id;
+        $valeurs[] = $this->id;
 
         // On transforme le tableau "champs" en une chaine de caracteres
         $liste_champs = implode(', ', $champs);
@@ -119,7 +121,7 @@ class Model extends Db
         }
     }
 
-    public function hydrate(array $donnees)
+    public function hydrate($donnees)
     {
         foreach($donnees as $key => $value){
             // On récupère le nom du setter correspondant à la clé (key)

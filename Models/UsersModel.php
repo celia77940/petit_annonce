@@ -4,72 +4,73 @@ namespace App\Models;
 
 class UsersModel extends Model
 {
-    protected $id;
-    protected $email;
-    protected $password;
+    protected $idUser;
+    protected $Email;
+    protected $tel;
 
     public function __construct()
     {
-        $class = str_replace(__NAMESPACE__.'\\', '', __CLASS__);
-        $this->table = strtolower(str_replace('Model', '', $class));
+        $this->table = 'user'; 
     }
 
+    
+
     /**
-     * Get the value of id
+     * Get the value of tel
      */ 
-    public function getId()
+    public function getTel()
     {
-        return $this->id;
+        return $this->tel;
     }
 
     /**
-     * Set the value of id
+     * Set the value of tel
      *
      * @return  self
      */ 
-    public function setId($id)
+    public function setTel($tel)
     {
-        $this->id = $id;
+        $this->tel = $tel;
 
         return $this;
     }
 
     /**
-     * Get the value of email
+     * Get the value of Email
      */ 
     public function getEmail()
     {
-        return $this->email;
+        return $this->Email;
     }
 
     /**
-     * Set the value of email
+     * Set the value of Email
      *
      * @return  self
      */ 
-    public function setEmail($email)
+    public function setEmail($Email)
     {
-        $this->email = $email;
+        $this->Email = $Email;
 
         return $this;
     }
 
     /**
-     * Get the value of password
+     * Get the value of idUser
      */ 
-    public function getPassword()
+    public function getIdUser()
     {
-        return $this->password;
+        return $this->idUser;
     }
 
     /**
-     * Set the value of password
+     * Set the value of idUser
      *
      * @return  self
      */ 
-    public function setPassword($password)
+    public function setIdUser($idUser)
     {
-        $this->password = $password;
+        $this->idUser = $idUser;
 
         return $this;
     }

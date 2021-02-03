@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>
-    <div class="fond">
-        <img src="img/logo.png" height="70em" alt="">
-    </div>
-    <div class="fond1">
-    <h1> Vente de livre d'occasion </h1>
-    <h2> Roman/ Biographie/ Pièce de théâtre/ Art poétique </h2>
-    </div>
-
-    
+        <div class="fond">
+            <img src="img/logo.png" height="70em" alt="">
+        </div>
+        <div class="fond1">
+            <h1> Vente de livre d'occasion </h1>
+            <h2> Roman/ Biographie/ Pièce de théâtre/ Art poétique </h2>
+            <div class="button">
+               <button> <a href="/ajouter">Ajouter une annonce</a></button>
+            </div>           
+        </div>
     </header>
-
 </body>
 </html>

@@ -34,3 +34,9 @@ h2{
     color: white;
     font-size: 2em
 }
+
+.button button{
+    margin:0;
+    margin-left: 45em;
+    margin-top: 1em;
+}
