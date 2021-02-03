@@ -96,17 +96,17 @@ Une page message supression :
 -	[x] Réaliser un diagramme de cas d'utilisation
 -	[x] Réaliser le readme
 -	[x] Réaliser la maquette du site
--	[ ] Comprendre les technologies que l'on a besoin pour le projet
+-	[x] Comprendre les technologies que l'on a besoin pour le projet
 -	[x] Concevoir le MCD
--	[ ] Concevoir le MLD
--	[ ] Concevoir le modèle physique
--   [ ] Installer le composer Windows 
--	[ ] Installer les dépendances PHP : AltoRouter, mPDF
--	[ ] Définir l'arborescence des dossiers
+-	[x] Concevoir le MLD
+-	[x] Concevoir le modèle physique
+- [x] Installer le composer Windows 
+-	[x] Installer les dépendances PHP : AltoRouter, mPDF
+-	[x] Définir l'arborescence des dossiers
 -	[ ] Mettre en place un gitignore
--	[ ] Avec composer généré l'Autoload (PSR-4)
--	[ ] Définir les routes nécessaire à votre projet
--	[ ] Mettre en place le Router et ajouter vos routes
+-	[x] Avec composer généré l'Autoload (PSR-4)
+-	[x] Définir les routes nécessaire à votre projet
+-	[x] Mettre en place le Router et ajouter vos routes
 -	[ ] Créer les contrôleurs et méthodes nécessaire au routes
 -	[ ] Créer les controleurs et méthodes nécessaire à vos routes ensemble.
 
@@ -118,8 +118,8 @@ Une page message supression :
 -	[ ] Réaliser le CSS et responsive
 
 ### Back  
--	[ ] Créer les modèles
--	[ ] Pour chaque méthodes définir les variables nécessaire à la vue
+-	[x] Créer les modèles
+-	[x] Pour chaque méthodes définir les variables nécessaire à la vue
 
 ## Objectifs ⭕️
 
